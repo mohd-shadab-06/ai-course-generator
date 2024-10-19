@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Header() {
@@ -17,8 +18,12 @@ function Header() {
           <span className="text-pink-700 font-medium text-2xl">Craft</span>
         </h2>
       </div>
-
-      <Button className="mt-4 justify-center items-center">Get Started</Button>
+      <Link href="/dashboard">
+        <Button className="mt-4 justify-center items-center">
+          Get Started
+        </Button>
+      </Link>
+      {/* <Button className="mt-4 justify-center items-center">Get Started</Button> */}
     </div>
   );
 }
